@@ -203,7 +203,13 @@ Declare a variable named `topQuote` and assign it to a String value of your favo
 Write a function that will iterate through the string value and return the longest word in that quote. Console.log your result.
 */
 
+var topQuote = "Potato chip rockout";
 
+function longestWord(word){
+  for (i=0;i<word.length;i++){
+
+  }
+}
 
 /* 12) Puppet Master
 Declare a variable named `miscStorage` set it's value to be: `[ [], 'Carrots', 9, 'Beets', {}, {name: "Todd B."}, 'Mush' ]`
@@ -213,16 +219,29 @@ Write a function named `generateArrayOfStrings` which takes a single argument `s
    @return Datatype: Array
 
 */
+var miscStorage = [ [], 'Carrots', 9, 'Beets', {}, {name: "Todd B."}, 'Mush' ];
 
+function generateArrayofStrings(storage){
+  var newStorage = [];
+  for (var i=0;i<storage.length;i++){
+  if (typeof storage[i] === typeof ""){
+     newStorage.push(storage[i]);
+   }
+ }
+ return newStorage;
+}
+console.log(generateArrayofStrings(miscStorage));
 
 
 /* 13) All Grown Up 
-Write a function that will capitalize the first letter in each word in the phrase below. The function will console.log the message: "I've Lived A Life That's Full. I've Traveled Each And Every Highway. But More, Much More Than This. I Did It My Way."  
+Write a function that will capitalize the first letter in each word in the phrase below. The function will console.log the essage: "I've Lived A Life That's Full. I've Traveled Each And Every Highway. But More, Much More Than This. I Did It My Way."  
 */
 
 var myWay = "i've lived a life that's full, i've traveled each and every highway. but more, much more than this. i did it my way.";
 
-
+// function caps(quotes){
+//   for (var i=0; quotes.length)
+// }
 
 /* 14) Sightseeing
 Write a function that will loop through the multi-dimensional array and console.log the city and landmark on separate lines.
