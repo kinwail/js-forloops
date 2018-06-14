@@ -133,11 +133,15 @@ down
 nope
 turn
 */
-var backward1 =[];
+var backward =[];
 for (var i =0;i<oopsArray.length;i++){
-  backward1[i] = oopsArray[oopsArray.length - i]
-  console.log(backward1[i]);
+  backward[i] = oopsArray[(oopsArray.length-1) - i ]
+  console.log(backward[i]);
   } 
+
+for (var i = oopsArray.length-1;i>=0;i--){
+  console.log(oopsArray[i]);
+}
 
 
 /* 9) Siesta Time
